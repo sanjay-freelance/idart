@@ -1,0 +1,47 @@
+/*Todo: Turn into Styled components*/
+
+.split-pane-row{
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  position: relative;
+}
+
+.split-pane-column{
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  position: relative;
+}
+
+.split-pane-right,
+.split-pane-left{
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.split-pane-top,
+.split-pane-bottom{
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+
+
+.split-pane-separator-column{
+  width:6px;
+  background: padding-box white;
+  box-sizing: border-box;
+  background-clip: padding-box;
+}
+
+.split-pane-separator-row{
+  height:6px;
+  background: padding-box white;
+  box-sizing: border-box;
+  background-clip: padding-box;
+}

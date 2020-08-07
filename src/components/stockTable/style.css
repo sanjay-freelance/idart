@@ -1,0 +1,14 @@
+.sticky-table-cell {
+  background: white;
+  border-bottom: 1px solid lightgrey;
+}
+
+.sticky-table-header {
+  background: white;
+}
+
+.sticky-table-sort-button {
+  border: none;
+  background: none;
+  min-width: 32px;
+}
