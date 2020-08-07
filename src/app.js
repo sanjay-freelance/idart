@@ -15,7 +15,7 @@ export default function StockMarket(){
 		<div className='app-container'>
 			<div className='app-header'>
 				<div>
-					<img className='logo' src='/static/img/infini-web-logo.png'/>
+					<img className='logo' src='static/img/infini-web-logo.png'/>
 				</div>
 				<div className='app-controllers'>
 					<button name='legacy' onClick={layoutClickHandler}>Legacy</button>
