@@ -3,7 +3,7 @@ import  reducer, {actionCreators} from "./reducers";
 import  {store} from "./reducers/store";
 import  {SocketService} from "abstracts/service";
 
-const stockUrl = 'ws://stocks.mnet.website/';
+const stockUrl = 'wss://stocks.mnet.website/';
 
 const DataContext = createContext(store);
 
