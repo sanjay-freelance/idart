@@ -7,28 +7,7 @@ const stockUrl = 'ws://stocks.mnet.website/';
 
 const DataContext = createContext(store);
 
-/*function ServiceProvider(props){
-	const { children, service, getter, params = {}, reducer } = props;
-	const [globalState, dispatch] = useReducer(reducer, store);
 
-	// Use effect to pull data and setup the store
-	// Note that we are passing an Array as second parameter to tell
-	// React only fire the effect on mount
-	useEffect( () => {
-		service[getter](...params).then((result)=>{
-			if(result){
-				dispatch(actionCreators[setter](result))
-			}
-		})
-	}, [getter, params]);
-
-	const context = { ...globalState, dispatch };
-	return (
-	<DataContext.Provider value={context}>
-		{children}
-	</DataContext.Provider>
-	)
-}*/
 
 function SocketProvider(props){
 	const { children } = props;

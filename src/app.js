@@ -11,7 +11,6 @@ export default function StockMarket(){
 	}
 
 	return (
-	<SocketProvider>
 		<div className='app-container'>
 			<div className='app-header'>
 				<div>
@@ -24,9 +23,10 @@ export default function StockMarket(){
 				</div>
 			</div>
 			<div className='layout-container'>
-				<StockLayout type={layout}/>
+				<SocketProvider>
+						<StockLayout type={layout}/>
+				</SocketProvider>
 			</div>
 		</div>
-	</SocketProvider>
 	)
 }
